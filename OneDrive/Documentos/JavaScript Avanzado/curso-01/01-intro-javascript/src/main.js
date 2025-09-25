@@ -32,3 +32,14 @@ const objeto = {
     }
 
 }
+
+let arrayFrutas = ['Manzana' , 'Pera', 'Limon', 'Banana', 'Naranja', 'Frutilla', 'Melon']
+
+let arrayFrutasFaltantes = ['Mora', 'Melocoton', 'Mandarina', 'Arandano']
+
+console.log(arrayFrutas)
+console.log(arrayFrutas[0])
+
+
+//metodos de los arrays
+console.log('Metodos de los arrays');
