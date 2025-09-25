@@ -19,3 +19,16 @@ let numero = 22 //Numero
 console.log(numero); 
 let numeroDec = 33.22 // Numero // camelCase para variables
 console.log(numeroDec);
+
+// !Objeto literal
+
+const objeto = {
+    nombre: 'Maxi',
+    apellido: 'Principe',
+    edad : 22,
+    isTeacher: true,
+    saludar: function(){
+        console.log('Hola soy', this.nombre)
+    }
+
+}
