@@ -190,9 +190,41 @@ const resultadoMulti = multiplicarArrow(3,5,7)
 console.log(resultadoMulti)
 
 
-// slice(): Extrae una copia de una parte de un array en nuevo array
-// splice(): Agrega o elimina elementos en una posición especifica
-// sort(). Orden alos elementos alfabeticamente
+
+console.log('// slice(): Extrae una copia de una parte de un array en nuevo array')
+let flores = ['Dandelion', 'Rosa', 'Girasol', 'Margarita', 'Petunia', 'Violeta', 'Tulipan', 'Clavel', 'Cala']
+
+console.log(flores)
+
+let dosFlores = flores.slice(2,5)
+console.log(dosFlores)
+
+
+console.log('// splice(): Agrega o elimina elementos en una posición especifica')
+
+let elementosEliminados = flores.splice(2,1)
+console.log(flores);
+console.log(elementosEliminados)
+
+// ? Reemplazar
+let borroDandelion = flores.splice(0,1,'Lirio', 'Geranio')
+console.log(borroDandelion);
+console.log(flores)
+
+
+console.warn('// sort(). Orden alos elementos alfabeticamente')
+let arrayLetras = ['A', 'Z', 'G', 'D', 'E', 'F']
+let arrayNumeritos = [11, 2, 19, 33, 6, 15]
+console.log(arrayLetras)
+console.log(arrayNumeritos)
+let funcionOrdenamiento = (a,b) => {
+    //console.log(a-b) // a es mas chico que b(-1) | a es mas grande que b(1)
+    return a-b
+}
+let ordernadoNumeritos = funcionOrdenamiento.sort(funcionOrdenamiento)
+console.log(ordernadoNumeritos);
+
+let ordenandoLetras = arrayLetras.sort()
 
 console.warn("Gestión de un array como cola o pila");
 
